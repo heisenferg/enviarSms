@@ -7,6 +7,16 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:text="Mensaje Recibido:"
+        app:layout_constraintBottom_toTopOf="@+id/edRecibido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSend" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,4 +75,17 @@
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edRecibido"
+        android:layout_width="328dp"
+        android:layout_height="190dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSend"
+        app:layout_constraintVertical_bias="0.399" />
 </androidx.constraintlayout.widget.ConstraintLayout>
